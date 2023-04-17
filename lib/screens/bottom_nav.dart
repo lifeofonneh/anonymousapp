@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:waya/colorscheme.dart';
+import 'package:waya/constants/constants.dart';
 import 'package:waya/screens/homepage.dart';
-import 'package:waya/screens/walletpage.dart';
 import 'package:waya/screens/profile/profilepage.dart';
-import 'package:waya/screens/bookingpage.dart';
+import 'package:waya/screens/messagesnotificationpage.dart';
+
 
 class BottomNavPage extends StatefulWidget {
 
@@ -17,9 +18,8 @@ class _BottomNavPageState extends State<BottomNavPage> {
   int _currentIndex = 0;
   static const List<Widget> _childrenPages = <Widget>[
     HomePage(),
-    BookingPage(),
-    WalletPage(),
-    ProfilePage()
+    MessagesPage(),
+    AccountPage()
   ];
 
   void onItemTapped(int index) {
@@ -37,19 +37,17 @@ class _BottomNavPageState extends State<BottomNavPage> {
         currentIndex: _currentIndex,
         onTap: onItemTapped,
         backgroundColor: Colors.white,
-        selectedItemColor: Colors.yellow,
+        selectedItemColor: blue,
         selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
         //type allows you have more than 1 item in bottom navigator
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+
           BottomNavigationBarItem(
-              icon: Icon(Icons.bookmark_outlined),
-              label: 'Bookings'),
+              icon: Icon(Icons.wallet), label: 'Messages'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.wallet), label: 'Wallet'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), label: 'Profile'),
+              icon: Icon(Icons.account_circle), label: 'Account'),
         ],
       ),
     );

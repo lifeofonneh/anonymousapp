@@ -47,7 +47,7 @@ class _PasswordSettingsState extends State<PasswordSettings> {
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (BuildContext context) {
-                      return const ProfilePage();
+                      return const AccountPage();
                     }));
               },
               style: ElevatedButton.styleFrom(
@@ -74,7 +74,7 @@ class _PasswordSettingsState extends State<PasswordSettings> {
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                          return const ProfilePage();
+                          return const AccountPage();
                         }));
                   },
                   style: ElevatedButton.styleFrom(

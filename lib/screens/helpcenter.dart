@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../../../colorscheme.dart';
 class HelpCenter extends StatefulWidget {
   const HelpCenter({Key? key}) : super(key: key);
 
@@ -61,9 +61,9 @@ class _HelpCenterState extends State<HelpCenter>
                 indicator: const BoxDecoration(
                   //color: Colors.yellow[100],
                   border: Border(
-                      bottom: BorderSide(width: 3.0, color: Colors.yellow)),
+                      bottom: BorderSide(width: 3.0, color: Colors.blue)),
                 ),
-                labelColor: Colors.yellow[600],
+                labelColor: Colors.blue[600],
                 unselectedLabelColor: Colors.black,
                 tabs: const [
                   Tab(
@@ -112,7 +112,7 @@ class ContactUs extends StatelessWidget {
               const Icon(
                 Icons.invert_colors,
                 size: 15.0,
-                color: Colors.yellow,
+                color: Colors.blue,
               ),
               const SizedBox(
                 width: 10,
@@ -122,7 +122,7 @@ class ContactUs extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   Text(
-                    'Website',
+                    'Call Hotlines',
                     style: TextStyle(fontSize: 15),
                   ),
                 ],

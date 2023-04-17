@@ -11,7 +11,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  TextEditingController email = TextEditingController();
+  TextEditingController username = TextEditingController();
   TextEditingController password = TextEditingController();
   bool val = false;
   @override
@@ -37,14 +37,18 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Padding(
-              padding: EdgeInsets.only(left: 12, bottom: 10),
-              child: Text(
-                'Login to your account',
-                style: TextStyle(
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: Text(
+                  'User Login',
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 27,
-                    color: Colors.black),
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
             Container(
@@ -53,11 +57,11 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     //TextField for name
                     TextField(
-                      controller: email,
+                      controller: username,
                       cursorColor: customPurple,
                       keyboardType: TextInputType.text,
                       decoration: const InputDecoration(
-                          hintText: 'Email',
+                          hintText: 'Username',
                           contentPadding: EdgeInsets.all(15),
                           enabledBorder: OutlineInputBorder(
                             borderRadius:
@@ -68,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                           focusedBorder: OutlineInputBorder(
                             borderRadius:
                             BorderRadius.all(Radius.circular(15)),
-                            borderSide: BorderSide(color: Colors.yellow),
+                            borderSide: BorderSide(color: Colors.blue),
                           )),
                     ),
                   ],
@@ -94,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                           focusedBorder: OutlineInputBorder(
                             borderRadius:
                             BorderRadius.all(Radius.circular(15)),
-                            borderSide: BorderSide(color: Colors.yellow),
+                            borderSide: BorderSide(color: Colors.blue),
                           )),
                     ),
                   ],
@@ -108,7 +112,7 @@ class _LoginPageState extends State<LoginPage> {
                         }));
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: customPurple,
+                      primary: blue,
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.vertical(
                           top: Radius.circular(20),

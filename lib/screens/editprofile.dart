@@ -109,43 +109,7 @@ class _EditProfileState extends State<EditProfile> {
                         cursorColor: customPurple,
                         keyboardType: TextInputType.text,
                         decoration: const InputDecoration(
-                            hintText: 'Enter your First Name',
-                            contentPadding: EdgeInsets.all(15),
-                            enabledBorder: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(15)),
-                              borderSide: BorderSide(color: Colors.black),
-                            ),
-                            filled: true,
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(15)),
-                              borderSide: BorderSide(color: Colors.yellow),
-                            )),
-                      ),
-                    ],
-                  )),
-              const Padding(
-                padding: EdgeInsets.only(left: 12),
-                child: Text(
-                  'Password',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                      color: Colors.black),
-                ),
-              ),
-              Container(
-                  padding: const EdgeInsets.all(12),
-                  child: Column(
-                    children: [
-                      //TextField for name
-                      TextField(
-                        controller: password,
-                        cursorColor: customPurple,
-                        keyboardType: TextInputType.text,
-                        decoration: const InputDecoration(
-                            hintText: 'Enter your First Name',
+                            hintText: 'Enter your Last Name',
                             contentPadding: EdgeInsets.all(15),
                             enabledBorder: OutlineInputBorder(
                               borderRadius:
@@ -182,7 +146,7 @@ class _EditProfileState extends State<EditProfile> {
                         cursorColor: customPurple,
                         keyboardType: TextInputType.text,
                         decoration: const InputDecoration(
-                            hintText: 'Enter your First Name',
+                            hintText: 'Enter your Email Address',
                             contentPadding: EdgeInsets.all(15),
                             enabledBorder: OutlineInputBorder(
                               borderRadius:
@@ -206,7 +170,7 @@ class _EditProfileState extends State<EditProfile> {
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (BuildContext context) {
-                        return const ProfilePage();
+                        return const AccountPage();
                       }));
                     },
                     style: ElevatedButton.styleFrom(
@@ -222,7 +186,7 @@ class _EditProfileState extends State<EditProfile> {
                       height: 50,
                       child: Center(child: Text('Update', style: TextStyle(
 
-                          color: Colors.black),)
+                          color: Colors.white),)
                       ),
                     )),
               ),

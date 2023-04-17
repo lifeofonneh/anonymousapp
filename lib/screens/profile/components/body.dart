@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:waya/screens/editprofile.dart';
 import 'package:waya/screens/helpcenter.dart';
-import 'package:waya/screens/addresssettings.dart';
 import 'package:waya/screens/passwordsettings.dart';
 
 import 'profile_menu.dart';
@@ -25,23 +24,8 @@ class _BodyState extends State<Body> {
           SizedBox(height: 20),
 
 
-          ProfileMenu(
-            text: "Edit Profile",
-            icon: "assets/icons/User Icon.svg",
-            press: () => Navigator.push(context,
-                MaterialPageRoute(builder: (BuildContext context) {
-                  return const EditProfile();
-                }))
 
-          ),
-          ProfileMenu(
-            text: "Address",
-            icon: "assets/icons/ad.svg",
-            press: () => Navigator.push(context,
-              MaterialPageRoute(builder: (BuildContext context) {
-                return const AddressSettings();
-              })),
-          ),
+
           //ProfileMenu(
           //  text: "Notifications",
             //icon: "assets/icons/Settings.svg",

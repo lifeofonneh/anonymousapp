@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:waya/constants/constants.dart';
 
-class MessagesNotificationPage extends StatefulWidget {
-  const MessagesNotificationPage({Key? key}) : super(key: key);
+class MessagesPage extends StatefulWidget {
+  const MessagesPage({Key? key}) : super(key: key);
 
   @override
-  State<MessagesNotificationPage> createState() =>
-      _MessagesNotificationPageState();
+  State<MessagesPage> createState() =>
+      _MessagesPageState();
 }
 
-class _MessagesNotificationPageState extends State<MessagesNotificationPage> {
+class _MessagesPageState extends State<MessagesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +18,7 @@ class _MessagesNotificationPageState extends State<MessagesNotificationPage> {
           margin: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             const Text(
-              "Notifications",
+              "Messages",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
             ),
             const SizedBox(
@@ -30,7 +31,7 @@ class _MessagesNotificationPageState extends State<MessagesNotificationPage> {
                 //width: 350,
                 padding: const EdgeInsets.all(8),
                 decoration: const BoxDecoration(
-                    color: Colors.blueGrey,
+                    color: blue,
                     borderRadius: BorderRadius.all(Radius.circular(20))
                 ),
                 child: SizedBox(
@@ -42,6 +43,7 @@ class _MessagesNotificationPageState extends State<MessagesNotificationPage> {
                       const Icon(
                         Icons.info,
                         size: 25.0,
+                        color: Colors.white,
                       ),
                       const SizedBox(
                         width: 10,
@@ -52,11 +54,11 @@ class _MessagesNotificationPageState extends State<MessagesNotificationPage> {
                         children: const [
                           Text(
                             'Message Head',
-                            style: TextStyle(fontSize: 25),
+                            style: TextStyle(fontSize: 25,color: Colors.white,),
                           ),
                           Text(
                             'Special promo only valid for new customers!',
-                            style: TextStyle(fontSize: 10),
+                            style: TextStyle(fontSize: 10,color: Colors.white,),
                           ),
                         ],
                       )

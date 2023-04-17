@@ -10,3 +10,4 @@ const kPrimaryGradientColor = LinearGradient(
 );
 const kSecondaryColor = Color(0xFFFFD700);
 const kTextColor = Color(0xFFFFFFFF);
+const blue = Color(0xFF0323F4);

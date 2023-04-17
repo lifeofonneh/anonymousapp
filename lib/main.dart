@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:location/location.dart';
-import 'package:waya/screens/welcomepage.dart';
+import 'package:waya/screens/introduction.dart';
+
+import 'package:waya/screens/loginpage.dart';
 import 'package:flutter/services.dart';
 import 'package:waya/routes.dart';
 import 'package:waya/screens/messagesnotificationpage.dart';
@@ -11,10 +12,9 @@ void main() {
   SystemChrome.setPreferredOrientations(
           [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
       .then((value) => runApp(const MaterialApp(
-            home: WApp(),
+            home: Anonymous(),
           )));
 }
-
 // void findLoc() async{
 //   Location location = Location();
 //
@@ -42,13 +42,13 @@ void main() {
 //   print(_locationData);
 // }
 
-class WApp extends StatelessWidget {
-  const WApp({Key? key}) : super(key: key);
+class Anonymous  extends StatelessWidget {
+  const Anonymous({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: WelcomePage(),
+      body: IntroductionPage()
 
     );
   }
