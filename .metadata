@@ -22,10 +22,7 @@ migration:
       create_revision: 52b3dc25f6471c27b2144594abb11c741cb88f57
       base_revision: 52b3dc25f6471c27b2144594abb11c741cb88f57
 
-  # User provided section
 
-  # List of Local paths (relative to this file) that should be
-  # ignored by the migrate tool.
   #
   # Files that are not part of the templates will be ignored by default.
   unmanaged_files:
