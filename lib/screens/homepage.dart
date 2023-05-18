@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:time_greeting/time_greeting.dart';
-import 'package:waya/screens/report.dart';
+import 'package:anonymous/screens/report.dart';
 import '../../../colorscheme.dart';
 import '../constants/constants.dart';
 

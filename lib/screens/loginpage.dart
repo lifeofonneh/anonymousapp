@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:waya/screens/bottom_nav.dart';
+import 'package:anonymous/screens/bottom_nav.dart';
 import '../colorscheme.dart';
 import 'homepage.dart';
 import '../constants/constants.dart';

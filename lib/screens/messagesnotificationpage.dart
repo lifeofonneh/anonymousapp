@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:waya/constants/constants.dart';
+import 'package:anonymous/constants/constants.dart';
 
 class MessagesPage extends StatefulWidget {
   const MessagesPage({Key? key}) : super(key: key);

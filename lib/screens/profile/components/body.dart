@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:waya/screens/editprofile.dart';
-import 'package:waya/screens/helpcenter.dart';
-import 'package:waya/screens/passwordsettings.dart';
+import 'package:anonymous/screens/editprofile.dart';
+import 'package:anonymous/screens/helpcenter.dart';
+import 'package:anonymous/screens/passwordsettings.dart';
 
 import 'profile_menu.dart';
 import 'profile_pic.dart';

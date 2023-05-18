@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:waya/screens/signup.dart';
+import 'package:anonymous/screens/signup.dart';
 import '../constants/constants.dart';
 class IntroductionPage extends StatefulWidget {
   const IntroductionPage({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/intro_background.png"),
+            image: AssetImage("assets/images/images.jpg"),
             fit: BoxFit.cover,
           ),
         ),

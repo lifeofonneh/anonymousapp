@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:waya/colorscheme.dart';
-import 'package:waya/constants/constants.dart';
-import 'package:waya/screens/homepage.dart';
-import 'package:waya/screens/profile/profilepage.dart';
-import 'package:waya/screens/messagesnotificationpage.dart';
+import 'package:anonymous/colorscheme.dart';
+import 'package:anonymous/constants/constants.dart';
+import 'package:anonymous/screens/homepage.dart';
+import 'package:anonymous/screens/profile/profilepage.dart';
+import 'package:anonymous/screens/messagesnotificationpage.dart';
 
 
 class BottomNavPage extends StatefulWidget {

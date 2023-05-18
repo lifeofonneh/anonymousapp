@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:waya/screens/profile/profilepage.dart';
+import 'package:anonymous/screens/profile/profilepage.dart';
 import '../../../colorscheme.dart';
 import '../constants/constants.dart';
 class PasswordSettings extends StatefulWidget {

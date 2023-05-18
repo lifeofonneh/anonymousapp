@@ -1,4 +1,4 @@
-package com.example.waya
+package com.example.anonymous
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:waya/screens/introduction.dart';
+import 'package:anonymous/screens/introduction.dart';
 
-import 'package:waya/screens/loginpage.dart';
+import 'package:anonymous/screens/loginpage.dart';
 import 'package:flutter/services.dart';
-import 'package:waya/routes.dart';
-import 'package:waya/screens/messagesnotificationpage.dart';
-import 'package:waya/screens/editprofilepage.dart';
+import 'package:anonymous/routes.dart';
+import 'package:anonymous/screens/messagesnotificationpage.dart';
+import 'package:anonymous/screens/editprofilepage.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   //Set app orientation to portrait only

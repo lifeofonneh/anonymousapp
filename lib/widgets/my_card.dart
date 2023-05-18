@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:waya/colorscheme.dart';
+import 'package:anonymous/colorscheme.dart';
 
 class MyCard extends StatefulWidget {
   const MyCard({Key? key}) : super(key: key);
